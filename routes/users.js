@@ -32,7 +32,7 @@ const router = express.Router();
     const user = await GetUserByID(id);
   
     
-    user ? response.send(user) : response.status(404).send({message: "no matching user found"})
+    user ? response.send(user) : response.send("No Emp id found");
     
   })
   
